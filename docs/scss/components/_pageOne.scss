@@ -1,0 +1,19 @@
+.pageOne {
+    background-position: right 185px center;
+}
+.pageOne__nav {
+    margin: 0px 0px 165px 0px;
+}
+.pageOne__title {
+    span {
+        display: block;
+        font-family: var(--WorkSans);
+        font-weight: 500;
+        font-size: 35px;
+    }
+    margin: 0px 0px 40px 0px;
+}
+.pageOne__text {
+    margin: 0px 0px 65px 0px;
+    width: 45%;
+}

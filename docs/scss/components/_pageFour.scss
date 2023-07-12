@@ -1,0 +1,99 @@
+.pageFour {
+    padding: 85px 140px 0px 95px;
+    background-position: right 25px center;
+    background-size: 522px 814px;
+    background-color: #050505;
+}
+.pageFour__nav {
+    margin: 0px 0px 185px 0px;
+    display: flex;
+    align-items: end;
+}
+.pageFour__link {
+    display: block;
+    font-family: var(--NunitoSans);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 10%;
+    &:not(:last-child) {
+        margin: 0px 50px 0px 0px;
+    }
+}
+.pageFour__link--logo {
+    font-weight: 700;
+    font-size: 34px;
+}
+.pageFour__link--email {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.pageFour__wrapper {
+    display: flex;
+    margin: 0px 0px 185px 0px;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 40px 0px 0px;
+}
+.pageFour__social {
+    display: block;
+}
+.social__link {
+    width: 34px;
+    height: 34px;
+    &:not(:last-child) {
+        margin: 0px 0px 36px 0px;
+    }
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.social__inst {
+    background-image: url('../img/inst.svg');
+}
+.social__linkedin {
+    background-image: url('../img/linkedin.svg');
+}
+.social__dribble {
+    background-image: url('../img/dribbble.svg');
+}
+.pageFour__content {
+    padding: 6px 0px 6px 40px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+.pageFour__title {
+    font-family: var(--WorkSans);
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 10%;
+    margin: 0px 0px 15px 0px;
+}
+.pageFour__subtitle {
+    span {
+        display: block;
+    }
+    font-family: var(--WorkSans);
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 82px;
+    margin: 0px 0px 25px 0px;
+}
+.pageFour__number {
+    display: inline-block;
+    font-family: var(--WorkSans);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    &:not(:last-child) {
+        margin: 0px 72px 0px 0px;
+    }
+}
+.pageFour__number--active {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,55 @@
+.pageFive {
+    padding: 90px 185px 90px 100px;
+    background-position: right center;
+    background-color: #050505;
+}
+.pageFive__nav {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 175px 0px;
+}
+.pageFive__link {
+    font-family: var(--Alegreya);
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 3px;
+    &:not(:last-child) {
+        margin: 0px 40px 0px 0px;
+    }
+}
+.pageFive__link--logo {
+    font-family: var(--EmilysCandy);
+    font-weight: 400;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+.pageFive__title {
+    span {
+        display: block;
+    }
+    font-family: var(--Alegreya);
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 82px;
+    margin: 0px 0px 25px 0px;
+}
+.pageFive .button {
+    display: block;
+    font-family: var(--Alegreya);
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin: 0px 0px 210px 0px;
+}
+.pageFive__socials {
+    display: flex;
+}
+.pageFive__socials a {
+    display: block;
+    margin: 0px 24px 0px 0px;
+    &:last-child {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        text-align: right;
+    }
+}

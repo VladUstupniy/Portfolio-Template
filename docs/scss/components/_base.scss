@@ -1,0 +1,75 @@
+.page {
+    padding: 65px 0px 0px 100px;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 900px;
+    background-color: #000508;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.title {
+    font-family: var(--WorkSans);
+    font-weight: 700;
+    font-size: 65px;
+}
+.button {
+    color: #fff;
+    text-transform: capitalize;
+}
+.button--doubleUnderline {
+    font-family: var(--PTSans);
+    font-weight: 700;
+    font-size: 35px;
+    &::after {
+        display: block;
+        content: url('../img/underline.svg');
+    }
+}
+.button--box {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 23px 50px;
+    background-color: #fff;
+    font-family: var(--NunitoSans);
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+}
+.button--underline {
+    font-family: var(--WorkSans);
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 2px;
+    position: relative;
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 230px;
+        height: 2px;
+        bottom: -10px;
+        left: 60px;
+        background-color: #fff;
+    }
+}
+
+.text {
+    font-family: var(--PTSans);
+    font-weight: 400;
+    font-size: 25px;
+    width: 50%;
+}
+
+.nav__link {
+    font-family: var(--PTSans);
+    font-weight: 400;
+    font-size: 20px;
+    &:not(:last-child) {
+        margin: 0px 44px 0px 0px;
+    }
+}
+
+.nav__link--logo {
+    font-weight: 700;
+    font-size: 25px;
+}
