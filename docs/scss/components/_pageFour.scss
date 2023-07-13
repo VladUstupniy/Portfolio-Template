@@ -54,12 +54,21 @@
 }
 .social__inst {
     background-image: url('../img/inst.svg');
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 .social__linkedin {
     background-image: url('../img/linkedin.svg');
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 .social__dribble {
     background-image: url('../img/dribbble.svg');
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 .pageFour__content {
     padding: 6px 0px 6px 40px;

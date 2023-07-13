@@ -344,6 +344,12 @@ template {
 a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  color: dodgerblue;
 }
 
 body {
@@ -380,9 +386,16 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  -webkit-transform: scale(0.5) rotate(-30deg) translate(-50%, 0%);
-      -ms-transform: scale(0.5) rotate(-30deg) translate(-50%, 0%);
-          transform: scale(0.5) rotate(-30deg) translate(-50%, 0%);
+  -webkit-transform: scale(0.5) rotate(-30deg) translate(-40%, 0%);
+      -ms-transform: scale(0.5) rotate(-30deg) translate(-40%, 0%);
+          transform: scale(0.5) rotate(-30deg) translate(-40%, 0%);
+}
+@media (max-width: 768px) {
+  .wrapper {
+    -webkit-transform: scale(0.3) rotate(-30deg) translate(-50%, 0%);
+        -ms-transform: scale(0.3) rotate(-30deg) translate(-50%, 0%);
+            transform: scale(0.3) rotate(-30deg) translate(-50%, 0%);
+  }
 }
 
 .wrapper__row {
@@ -391,18 +404,14 @@ body {
   display: flex;
   margin-bottom: 50px;
 }
+.wrapper__row:nth-child(3) {
+  margin: 0px 0px 50px -30%;
+}
 .wrapper__row:last-child {
   margin-bottom: 0;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-}
-
-.wrapper__row--three {
-  margin: 0px 0px 50px -30%;
-}
-
-.wrapper__row--four {
   margin: 0px -90% 0px 0px;
 }
 
@@ -630,13 +639,28 @@ body {
 .social__inst {
   background-image: url("../img/inst.svg");
 }
+.social__inst:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
 
 .social__linkedin {
   background-image: url("../img/linkedin.svg");
 }
+.social__linkedin:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
 
 .social__dribble {
   background-image: url("../img/dribbble.svg");
+}
+.social__dribble:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .pageFour__content {

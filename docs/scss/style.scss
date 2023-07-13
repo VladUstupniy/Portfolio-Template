@@ -44,6 +44,11 @@ body {
 a {
 	text-decoration: none;
     color: #fff;
+    position: relative;
+    transition: all .3s ease-out;
+    &:hover{
+        color: dodgerblue;
+    }
 }
 //-----[--/ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ/--]---------------------------------------------------------------------------------------------
 
@@ -71,21 +76,22 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    transform: scale(0.5) rotate(-30deg) translate(-50%, 0%);
+    transform: scale(0.5) rotate(-30deg) translate(-40%, 0%);
+    @media (max-width: 768px) {
+        transform: scale(0.3) rotate(-30deg) translate(-50%, 0%);
+    }
 }
 .wrapper__row {
     display: flex;
     margin-bottom: 50px;
+    &:nth-child(3) {
+        margin: 0px 0px 50px -30%;
+    }
     &:last-child {
         margin-bottom: 0;
         align-self: end;
+        margin: 0px -90% 0px 0px;
     }
-}
-.wrapper__row--three {
-    margin: 0px 0px 50px -30%;
-}
-.wrapper__row--four {
-    margin: 0px -90% 0px 0px;
 }
 //-----[--/ОБОЛОЧКА/--]---------------------------------------------------------------------------------------------------------------
 
